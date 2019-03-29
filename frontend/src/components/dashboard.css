@@ -1,0 +1,81 @@
+#dash__vp {
+  height: 100%;
+}
+
+#dash__vp #wrap {
+	min-height: 100%;
+}
+
+#dash__vp #main {
+  padding-bottom:50px; /* this needs to be bigger than footer height*/
+}
+
+#dash__vp .card-outer {
+	padding: 15px;
+}
+
+#dash__vp .card {
+  padding: 5px;
+}
+
+.row.small-gutters > [class^="col-sm"],
+.row.small-gutters > [class*=" col-sm"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#dash__vp .panel {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#dash__vp .quiet {
+	color: #bbb;
+}
+
+#dash__vp .teammate {
+  padding-right: 5px;
+}
+
+#dash__vp .loud {
+	font-weight: 800;
+}
+
+#dash__vp .countdown .number {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+#dash__vp .countdown .desc {
+  text-transform: lowercase;
+  color: #888;
+}
+
+#dash__vp .action-bar {
+  margin-top: 20px;
+}
+
+#dash__vp .chat > div {
+	padding: 5px 15px;
+}
+
+#dash__vp .team {
+  padding: 10px 12%;
+  margin: auto;
+}
+
+#dash__vp .profile {
+  padding: 10px 12%;
+  margin: auto;
+}
+
+#dash__vp .footer {
+	text-align: center;
+  position: relative;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:20px;
+}
+
+

@@ -1,0 +1,12 @@
+dispatch:
+#- url: "*/favicon.ico"
+#  module: default
+
+- url: "*/api/v*"
+  module: eleague-be
+
+- url: "www.esportsleague.gg/"
+  module: eleague-fe
+
+- url: "www.esportsleague.gg/*"
+  module: eleague-fe

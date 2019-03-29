@@ -1,0 +1,16 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+# No scaling stanza specified: will use automatic scaling and F1 instance
+
+handlers:
+- url: /.*
+  script: blank.app
+
+skip_files:
+  - \.gitignore
+  - backend/.*
+  - frontend/.*
+  - ng-frontend/.*
+  - old_frontend/.*
+  - ^\.git/.*

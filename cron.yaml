@@ -1,0 +1,6 @@
+cron:
+- description: "week match scheduling"
+  url: /api/v1/cron/schedule-matches
+  schedule: every thursday 23:59
+  #  timezone: America/Los_Angeles
+  timezone: America/Chicago

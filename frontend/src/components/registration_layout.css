@@ -1,0 +1,27 @@
+#reg__vp {
+  height: 100%;
+}
+
+#reg__vp #wrap {
+	min-height: 100%;
+}
+
+#reg__vp #main {
+  padding-bottom:50px; /* this needs to be bigger than footer height*/
+}
+
+#reg__vp .content {
+  background-color: #fff;
+  padding: 10px 30px 10px 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+#reg__vp .footer {
+	text-align: center;
+  position: relative;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:20px;
+}

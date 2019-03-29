@@ -1,0 +1,12 @@
+#errmod__vp .modal-header {
+	color: #944;
+}
+
+#errmod__vp .modal-body {
+	background-color: #fffafa;
+}
+
+#errmod__vp ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

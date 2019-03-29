@@ -1,0 +1,16 @@
+<nav>
+	<a [routerLink] = "['/']"><img src="./assets/img/logo.svg" alt="logo"></a>
+	<div *ngIf="selectionData.selectionData.isHideBoxNavbar" class="go-next">
+		<p *ngIf="selectionData.selectionData.gameName !== ''">
+			<span>Selection: </span>{{selectionData.selectionData.gameName}}
+			<span *ngIf="selectionData.selectionData.gameGroup=='18+'"> Adult</span>
+			<span *ngIf="selectionData.selectionData.gameGroup!=='18+'"> Youth</span> {{selectionData.selectionData.gameGroup}}
+		</p>
+		<a [ngClass]    = "{disabled: selectionData.selectionData.gameName == ''}"
+			 href         = "{{selectionData.selectionData.linkData}}"
+		   class        = "btn-next"
+			 (click)      = "getLink($event)"
+			>Next
+		</a>
+	</div>
+</nav>

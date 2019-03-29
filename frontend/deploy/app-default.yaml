@@ -1,0 +1,33 @@
+service: default
+runtime: python27
+api_version: 1
+threadsafe: true
+# No scaling stanza specified: will use automatic scaling and F1 instance
+
+default_expiration: "1m"
+
+handlers:
+- url: .*_dist/(.+)
+  static_files: dist/\1
+  upload: dist/(.*)
+  secure: always
+
+- url: /(.*)
+  static_files: dist/index.html
+  upload: dist/index.html
+  secure: always
+
+skip_files:
+  - ^(.*/)?app\.yaml
+  - ^(.*/)?#.*#
+  - ^(.*/)?.*~
+  - ^(.*/)?.*\.py[co]
+  - ^(.*/)?\..*
+  - ^(.*/)?tests$
+  - ^(.*/)?test$
+  - ^test/(.*/)?
+  - ^README\..*
+  - \.gitignore
+  - ^\.git/.*
+  - \.*\.lint$
+  - ^node_modules/(.*/)?

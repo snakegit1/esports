@@ -1,0 +1,74 @@
+#bc__vp {
+	min-height: 40px;
+	background: #474544;
+	padding: 0 13px;
+	position: relative;
+}
+
+#bc__vp img.logo {
+	margin-top: 4px;
+	width: 200px;
+}
+
+#bc__vp .breadcrumb, #bc__vp .breadcrumb a {
+    color: #bbb!important;
+    text-decoration: none !Important;
+}
+
+#bc__vp .breadcrumb {
+	display: inline-block;
+	margin: 0;
+	padding: 11px 34px 11px 0 !important;
+	background: none;
+	vertical-align: top;
+}
+
+#bc__vp .breadcrumb > li {
+	display: inline-block;
+}
+
+#bc__vp .breadcrumb > li:last-child {
+	color: #e4e4e4;
+}
+
+#bc__vp .right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 10px;
+}
+
+#bc__vp .btn-default {
+	background: transparent;
+	border: none;
+	color: #e4e4e4;
+	padding: 1px 5px;
+}
+
+#bc__vp .btn .caret {
+	margin: 5px;
+}
+
+#bc__vp ol {
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+
+.name {
+	font-size: 0.9em;
+}
+
+a.logout {
+	padding: 5px;
+}
+a.logout:before {
+	content: '[';
+}
+a.logout:after {
+	content: ']';
+}
+a.logout:focus, a.logout:hover {
+	text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.form-actions {
+    display: block;
+    padding: 13px 14px 15px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    background: hsla(0,0%,98%,.9);
+    text-align: right;
+    margin-top: 25px;
+}
+
+.form-actions ul {
+	margin: 0;
+}

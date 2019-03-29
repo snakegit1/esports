@@ -1,0 +1,22 @@
+
+@mixin font ( $font-family, $font-size, $font-weight, $color  )
+	font-family : $font-family, sans-serif
+	font-size   : $font-size
+	color       : $color
+	font-weight : $font-weight
+
+@mixin link ( $font-family, $font-size, $font-weight, $color )
+	font-family     : $font-family, sans-serif
+	font-size       : $font-size
+	color           : $color
+	text-decoration : underline
+	&:hover
+		color           : $color
+		text-decoration : none
+
+// @mixin background( $imgpath,$position:0 0,$repeat: no-repeat )
+// 	background:
+// 		image    : url($imgpath)
+// 		position : $position
+// 		repeat   : $repeat
+

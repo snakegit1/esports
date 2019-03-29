@@ -1,0 +1,42 @@
+
+
+<app-navbar></app-navbar>
+<div class="container payment">
+	<a class="arrow-link" [routerLink]="['/registration/league']"><span class="arrow"></span>Select your league</a>
+	<h1 class="text-left">Choose a payment option</h1>
+	<div class="payment-box">
+		<div class          = "payment-item"
+		     [class.active] = "setActive == 1"
+		     style          = "padding-top: 30px"
+		     (click)        = "onClickPrice('pricing1')"
+		>
+			<p>Single-Split Pricing</p>
+			<p class="price">$
+				<span *ngIf="this.gameGroup=='18'">{{ pricing1 }}</span>
+				<span *ngIf="this.gameGroup!=='18'">{{ pricing2 }}</span>
+			</p>
+			<span class="check selg"></span>
+		</div>
+		<div class          = "payment-item"
+		     [class.active] = "setActive == 2"
+		     (click)        = "onClickPrice('pricing2')"
+		>
+			<p>Yearly-Pricing (15% discount per split). You’ll play 8 splits a year.</p>
+			<p class="price">$
+				<span *ngIf="this.gameGroup=='18'">{{ pricing3 }}</span>
+				<span *ngIf="this.gameGroup!=='18'">{{ pricing4 }}</span>
+			</p>
+			<span class="check selg"></span>
+		</div>
+		<div [hidden]="pricing == ''" class="go-next">
+			<p>Selection: {{ fullNameGame }}
+				<span *ngIf="gameGroup=='18'"> Adult</span>
+				<span *ngIf="gameGroup!=='18'"> Youth</span>
+				<span *ngIf="gameGroup == '18'">{{ gameGroup }}+</span>
+				<span *ngIf="gameGroup !== '18'"> U{{ gameGroup }}</span> Pricing {{ pricing }}
+			</p>
+			<a [hidden]="setActive !== 1" href="{{idModal1}}" class="btn-next">Next</a>
+			<a [hidden]="setActive !== 2" href="{{idModal2}}" class="btn-next">Next</a>
+		</div>
+	</div>
+</div>

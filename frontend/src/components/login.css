@@ -1,0 +1,46 @@
+#login__vp .logo {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+#login__vp .full-width {
+    width: 100%;
+}
+
+#login__vp form {
+    margin-bottom: 1rem;
+}
+#login__vp form a {
+  color: #000;
+  font-size: 12px;
+  text-decoration: underline;
+}
+#login__vp form a:hover{
+  color: #5867dd;
+}
+#login__vp .form {
+    margin-top: 2%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#login__vp .social > .btn {
+	width: 100%;
+}
+.btn-facebook{
+  background-color: #3A5A99;
+  color: #fff;
+}
+.btn-facebook:hover{
+  background-color: #33518b;
+  color: #fff;
+}
+.btn-google-plus{
+  background-color: #DC4B3E;
+  color: #fff;
+}
+.btn-google-plus:hover{
+  background-color: #be463b;
+  color: #fff;
+}

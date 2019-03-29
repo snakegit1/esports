@@ -1,0 +1,52 @@
+#admin__vp .container > div {
+	background-color: #fff;
+	margin: 10px;
+	padding: 40px;
+}
+
+#admin__vp table.teams {
+	margin-top: 20px;
+	width: 100%;
+}
+
+#admin__vp table.teams th, table.teams td {
+   	border: 1px dotted black;
+}
+
+#admin__vp .container > div > form {
+	margin-bottom: 20px;
+}
+
+
+#teammodal__vp {
+	border-radius: 10px;
+	background-color: white;
+}
+
+
+#teamform__vp button {
+	margin-bottom: 3px;
+	margin-right: 3px;
+
+}
+
+ul.react-autosuggest__suggestions-list {
+	margin: 0;
+	padding: 0;
+}
+
+ul.react-autosuggest__suggestions-list li {
+	list-style: none;
+}
+
+ul.react-autosuggest__suggestions-list li div{
+	margin: 0 5px 0 5px;
+	padding: 10px;
+	background-color: #eee;
+	border: 1px solid #ddd;
+}
+
+ul.react-autosuggest__suggestions-list li div span.match {
+	font-weight: 700;
+	text-decoration: underline;
+}

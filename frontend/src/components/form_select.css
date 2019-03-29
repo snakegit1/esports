@@ -1,0 +1,45 @@
+#fs__vp {
+
+}
+
+#fs__vp .question {
+	padding: 1rem 0 2rem;
+}
+
+#fs__vp .prompt {
+	color: #737373;
+	padding-bottom: 0.5rem;
+}
+
+#fs__vp .select-toolbar input[type="radio"], #fs__vp .select-toolbar input[type="checkbox"] {
+  display: none;
+}
+
+#fs__vp .select-toolbar label {
+  display: inline-block;
+  margin-right: 3px;
+  /*background-color: #eee;*/
+  border: 2px solid #bbb;
+  padding: 8px 22px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#fs__vp .select-toolbar input[type="radio"]:disabled+label, #fs__vp .select-toolbar input[type="checkbox"]:disabled+label {
+  /*background-color: #e9e9e9;*/
+  color: #eee;
+}
+
+#fs__vp .select-toolbar input[type="radio"]:checked+label, #fs__vp .select-toolbar input[type="checkbox"]:checked+label {
+  background-color: #ccc;
+  border-color: #0091d9;
+}
+
+#fs__vp select {
+	background: none;
+	border: 2px solid #bbb;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 3px;
+	padding: 8px;
+}

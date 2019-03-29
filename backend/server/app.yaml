@@ -1,0 +1,14 @@
+service: eleague-be
+runtime: go
+api_version: go1.9
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: _go_app
+
+# When old endpoints was changed to Google Cloud Endpoints, a lot changed,
+# as can be seen in the Migrating to 2.0 documentation.
+#
+# Golang no longer has endpoints support (for now,
+# see: https://groups.google.com/d/topic/google-appengine-go/ojw2i6dqCpg/discussion)

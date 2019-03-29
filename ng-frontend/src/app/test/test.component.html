@@ -1,0 +1,55 @@
+<!--
+<div class="rnd" *ngIf="rnd !== null">
+<h2>Api</h2>
+	rnd every 1m: {{ rnd }}
+	<button (click)="onUpdateRnd()">update</button>
+<hr>
+</div>
+<h2>Bootstrap</h2>
+<alert type="success">
+  <strong>Bootstrap</strong> Alert, success message.
+</alert>
+
+<p>
+	css bg url
+</p>
+
+<img src="{{ env.assetsUrl }}/assets/test.png" alt="">
+-->
+<div>
+	<!-- link -->
+	<a href="/test1">test1</a>
+	<a href="/test">test</a>
+</div>
+
+<div>
+	<!-- ng link -->
+	<a [routerLink]="['/test']">ng test</a>
+	<a [routerLink]="['/test1']">ng test1</a>
+
+</div>
+
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Matherial" value="Test Matherial">
+</mat-form-field>
+
+<mat-tab-group>
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+
+<div class="test-timer">
+	<!--
+		<countdown [config]="{stopTime: 1537311099279}">
+			<div>$!h!<p>Часы</p></div>
+			<div>$!m!<p>Минуты</p></div>
+			<div>$!s!<p>Секунды</p></div>
+		</countdown>
+	-->
+	<countdown units="Days | Hours | Minutes"  end="July 22, 2019"></countdown>
+</div>
+
+<div>
+	<a href="#pkmodal4194252c51f30e3a2a9401d77689ce1ea38b61bd">test pay cickstarter</a>
+</div>

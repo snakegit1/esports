@@ -1,0 +1,26 @@
+#errmod__vp .modal-header {
+	color: #944;
+}
+
+#errmod__vp .modal-body {
+	background-color: #fffafa;
+}
+
+#errmod__vp ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.modal-body .error-msg {
+    margin-bottom: 10px;
+}
+
+.error-msg {
+    border: 1px solid red;
+    background-color: #ffefef;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px 50px;
+    text-align: left;
+	width: 100%;
+}

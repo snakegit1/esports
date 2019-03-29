@@ -1,0 +1,20 @@
+.m-datatable__table--table {
+	display : table !important;
+	width   : 100% !important;
+}
+
+.m-datatable__head--table {
+	display : table-header-group !important;
+}
+
+.m-datatable__row--table {
+	display : table-row !important;
+}
+
+.m-datatable__body--table {
+	display : table-row-group !important;
+}
+
+.date-time {
+	display : inline-block !important;
+}

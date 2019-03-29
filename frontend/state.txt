@@ -1,0 +1,41 @@
+cameront@gmail.com
+vhy789$abc
+
+
+
+Routing:
+
+default: /dashboard 
+BUT:
+if you haven't logged in, then /login
+then, if you have an incomplete profile, then /register
+
+
+register state = {
+	primary_positions: [mid]
+	secondary_positions: [top, adc]
+	rank_level: bronze
+	rank_tier: 4
+	ingame_name: abcdef
+	desired_outcome: fun/improve/pro
+	practice: false
+	time_zone: x
+	coaching: false
+	casting: true
+	referral_code: ab432
+	step_completed: 4
+}
+
+payment state = {
+	user_id: 12345
+	stripe_customer_id: abc123
+	stripe_subscription_id: 12345	
+}
+
+chat state = {
+	user_id/username
+	password
+	token
+	?
+}
+

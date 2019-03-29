@@ -1,0 +1,168 @@
+/*
+
+  1. Login Page
+  2. Dashboard
+
+ */
+
+/* 1. Login Page */
+.portlet-login-footer {
+  padding: 25px 40px;
+  text-align: center;
+  background-color: #3D3B56;
+}
+
+/* 2. Dashboard */
+#chat-widget {
+  position: relative;
+  background-image: url(./speech-bubles.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.m-topbar__userpic i{
+  font-size: 32px;
+}
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item.m-topbar__user-profile > .m-nav__link .m-topbar__username{
+  color: #000000;
+}
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item.m-topbar__user-profile > .m-nav__link:hover .m-topbar__username{
+  color: #727090;
+}
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item.m-topbar__user-profile > .m-nav__link .m-topbar__userpic{
+  color: #716ACA;
+}
+@media(min-width: 420px){
+  .m-aside-header-menu-mobile{
+    /*display: none;*/
+  }
+}
+@media (max-width: 992px){
+  .m-aside-header-menu-mobile-close{
+    right: 0;
+    left: inherit;
+  }
+}
+.m-aside-header-menu-mobile-close{
+  display: none
+}
+.m-aside-header-menu-mobile-close.visible{
+  display: block;
+}
+#m_header_menu{
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(113, 106, 202, 0.08);
+  box-shadow: 0px 1px 15px 1px rgba(113, 106, 202, 0.08);
+}
+/* CUSTOM */
+@-webkit-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  -moz-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 40px;
+  width: 40px;
+  border: 3px solid #716ACA;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pre-loading {
+  background: #F2F3F8;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  margin: -20px 0 -20px;
+}
+.modal.fade .modal-dialog{
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, 25%);
+  -ms-transform: translate(0, 25%);
+  transform: translate(0, 25%);
+}
+.full-width{
+  width: 100%;
+}
+
+#registration-portlet{
+  position: relative;
+}
+#registration-portlet .m-portlet__body{
+  padding-bottom: 130px;
+}
+.registration-bottom-actions{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  background: #3D3B56;
+}
+.dropdown-menu{
+  right: 0;
+  left: inherit;
+}

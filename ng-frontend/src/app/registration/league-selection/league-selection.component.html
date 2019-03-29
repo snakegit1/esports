@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="container">
+	<div class="top-title text-center">
+		<h2 class="mb-4">Welcome to the Esports Development League. Lets get you into the right team.</h2>
+		<h1>SELECT YOUR SPORT & AGE <span style="white-space: nowrap">GROUP<span class="bt-info psiti" mat-raised-button
+				 (click)="openModal()">i</span></span></h1>
+	</div>
+</div>
+<div class="select-game">
+	<section *ngFor="let game of games let j = index" class="{{game.class}}">
+		<div class="label-game">{{game.name}}</div>
+		<div class="box-select">
+			<img class="game-bg" src="./assets/img/{{ game.img }}" alt="">
+			<div class="box-scroll">
+				<div *ngFor="let game_group of game_groups let i = index">
+					<div class="box-button">
+						<p>
+							<span *ngIf="game_group == '18+'">Adult</span> {{game_group}} Leagues
+						</p>
+						<a href           = "javascript:void(0)"
+						   class          = "btn-select-game"
+						   (click)        = "n=i; k=j; selectGameAndGroup(game.name, game_group, game.class)"
+						   [class.active] = "(n==i) && (k==j)"
+						 >
+							<img src="./assets/img/flag.svg" alt>
+							<span class="check selg"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div *ngIf="isNext" class="go-next">
+		<p>Selection: {{selectionData.selectionData.gameName}} 
+				<span *ngIf="selectionData.selectionData.gameGroup=='18+'"> Adult</span>
+				<span *ngIf="selectionData.selectionData.gameGroup!=='18+'"> Youth</span> {{selectionData.selectionData.gameGroup}} </p>
+		<a href="{{selectionData.selectionData.linkData}}" class="btn-next">Next</a>
+	</div>
+</div>

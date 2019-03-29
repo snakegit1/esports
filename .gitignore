@@ -1,0 +1,6 @@
+*~
+/vendor
+/cache
+key.json
+composer.lock
+esportsleague-gg-*.json

@@ -1,0 +1,21 @@
+#em__vp h3 {
+	text-align: center;
+}
+
+#em__vp .refer {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.3em;
+}
+
+#em__vp .refer .link {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+#em__vp .refer .link input {
+	width: 75%;
+}
+#copy-input{
+	height: 37px;
+}

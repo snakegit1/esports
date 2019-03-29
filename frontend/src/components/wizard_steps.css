@@ -1,0 +1,109 @@
+#ws__vp {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+#ws__vp .bootstrapWizard {
+    display: block;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#ws__vp .bootstrapWizard li {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-left: 0;
+}
+
+#ws__vp .bootstrapWizard li:before {
+    /*border-top: 3px solid #55606E;*/
+    content: "";
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    top: 32px;
+    right: 1px;
+    width: 100%;
+    height: 5px;
+    z-index: 1;
+
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.07);
+}
+
+#ws__vp .bootstrapWizard li:first-child:before {
+    left: 50%;
+    max-width: 50%;
+}
+
+#ws__vp .bootstrapWizard li:last-child:before {
+    max-width: 50%;
+    width: 50%;
+}
+
+#ws__vp .btn, #ws__vp a:link, #ws__vp button {
+    -webkit-tap-highlight-color: rgba(169,3,41,.5);
+}
+
+#ws__vp a, #ws__vp button, #ws__vp input {
+    -ms-touch-action: none!important;
+}
+
+#ws__vp .bootstrapWizard li.active .step, #ws__vp .bootstrapWizard li.active.complete .step {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 50%;
+}
+#ws__vp .bootstrapWizard li.active .title{
+    font-weight: 700;
+}
+#ws__vp .bootstrapWizard li.complete .step {
+    background: #716ACA;
+    padding: 1px 6px;
+}
+
+#ws__vp .bootstrapWizard li .step {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    background: #B2B5B9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.07);
+    transition: all .1s linear 0s;
+}
+
+#ws__vp .bootstrapWizard li a:hover {
+    text-decoration: none;
+}
+
+#ws__vp .bootstrapWizard li.active .title, #ws__vp .bootstrapWizard li.complete .title {
+    color: #2B3D53;
+}
+
+#ws__vp .bootstrapWizard li .title {
+    color: #bfbfbf;
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 100%;
+    position: relative;
+    table-layout: fixed;
+    text-align: center;
+    top: 20px;
+    word-wrap: break-word;
+    z-index: 9;
+}

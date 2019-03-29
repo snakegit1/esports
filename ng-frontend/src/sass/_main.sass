@@ -1,0 +1,350 @@
+h2
+	@include font ( 'Open Sans', 32px, 300, $_COLOR_TXT  )
+
+h1
+	@include font ( 'Teko', 32px, bold, $_COLOR_H1  )
+
+.top-title
+	max-width : 675px
+	margin    : 97px auto 70px
+
+.label-game
+	@include font ( 'Open Sans', 32px, normal, $_COLOR_H1  )
+
+.box-select
+	position        : relative
+	display         : flex
+	display			: -webkit-flex
+	align-items     : center
+	-webkit-align-items : center
+	justify-content : space-evenly
+	-webkit-justify-content : space-around
+	padding         : 0 20px
+	width           : 100%
+	height          : 360px
+	border-radius   : 10px
+	margin          : 20px 0
+	overflow        : hidden
+	p
+		@include font ( 'Open Sans', 18px, 600, $_COLOR_WITHE )
+		margin-bottom : 10px
+	.game-bg
+		position : absolute
+		top      : 0
+		bottom   : 0
+		left     : 0
+		right    : 0
+		opacity  : 0.1
+
+.lol
+	.box-select
+		background-color : $_COLOR_LEAGUE_BG
+
+.fortnite 
+	.box-select
+		background-color : $_COLOR_FORTNITE_BG
+
+.csgo
+	.box-select
+		background-color : $_COLOR_CSGO_BG
+
+.overwatch 
+	.box-select
+		background-color : $_COLOR_OVERWATCH_BG
+
+.select-game
+	padding-bottom : 50px
+	section
+		overflow  : hidden
+		max-width : 1280px
+		margin    : auto
+		width     : calc(100% - 30px)
+		&:last-child
+			margin-bottom : 20px
+
+.btn-select-game
+	width            : 203px
+	height           : 203px
+	border           : 1px solid $_COLOR_WITHE
+	border-radius    : 10px
+	background-color : transparent
+	transition       : all 0.2s
+	display          : flex
+	align-items      : center
+	justify-content  : center
+	display			: -webkit-flex
+	-webkit-align-items : center
+	-webkit-justify-content : space-around
+	position         : relative
+	margin-bottom    : 30px
+	&:hover, &.active
+		background-color : rgba(255, 255, 255, 0.2)
+
+.box-button
+		margin : 0 15px
+
+.box-scroll
+	display         : flex
+	overflow-x      : auto
+	overflow-y      : hidden
+	position: relative
+	z-index         : 10
+	width           : 1010px
+	justify-content : space-between
+	display			: -webkit-flex
+	display			: -webkit-box
+	-webkit-justify-content : space-between
+
+.check
+	display          : inline-block
+	background-color : $_COLOR_WITHE
+	width            : 46px
+	height           : 46px
+	border-radius    : 50%
+	position         : absolute
+	display          : none
+	box-shadow       : 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+	&.selg
+		bottom : -24px
+		right  : -15px
+	&:after
+		content   : '\2713'
+		position  : absolute
+		left      : 11px
+		top       : 0px
+		color     : red
+		font-size : 34px
+
+.btn-select-game
+	&.active
+		.check
+			display: block
+
+.go-next
+	display         : flex
+	align-items     : center
+	justify-content : flex-end
+	display			: -webkit-flex
+	-webkit-align-items     : center
+	-webkit-justify-content : flex-end
+	// margin-bottom   : 50px
+	// margin-top      : 16px
+	max-width : 1280px
+	width     : calc(100% - 30px)
+	margin    : 50px auto 16px
+	p
+		margin : 0 20px 0 0
+		@include font ( 'Open Sans', 14px, 800, $_COLOR_H1  )
+
+.btn-next
+	display          : inline-block
+	padding          : 8px 15px
+	border-radius    : 5px
+	background-color : $_COLOR_BTN_BG
+	@include font ( 'Open Sans', 14px, 800, $_COLOR_WITHE  )
+	&:hover
+		text-decoration : none
+		color           : $_COLOR_WITHE
+	&.disabled
+		opacity : 0.5
+		cursor  : default
+
+
+.bt-info
+	display          : inline-block
+	width            : 24px
+	height           : 24px
+	background-color : #fff
+	border-radius    : 50%
+	box-shadow       : 0px 3px 12px rgba(0, 0, 0, 0.25)
+	line-height      : 125%
+	padding-right    : 1px
+	@include font ( 'Open Sans', 18px, 600, $_COLOR_BTN_BG )
+	&:hover
+		cursor : pointer
+	&.psiti
+		position : relative
+		left     : 20px
+		top      : -5px
+
+.modal-title
+	@include font ( 'Teko', 37px, 600, $_COLOR_H1  )
+	text-transform : uppercase
+	margin-top     : 107px
+	line-height    : 100%
+	letter-spacing : 1.7px
+
+.modal-body
+	padding-left  : 0
+	padding-right : 0
+	p
+		@include font ( 'Open Sans', 20px, normal, $_COLOR_H1 )
+
+mat-dialog-container
+	border-radius : 10px!important
+	padding       : 100px 75px 60px!important
+	position      : relative
+	.close
+		font-size   : 45px
+		color       : $_COLOR_BTN_LNK
+		position    : absolute
+		right       : 20px
+		top         : 20px
+		padding     : 0
+		margin      : 0
+		line-height : 53%
+		outline     : none
+		opacity     : 1
+		&:not(:disabled):not(.disabled):hover,
+		&:not(:disabled):not(.disabled):focus 
+			color   : $_COLOR_BTN_LNK
+			opacity : 1
+	.modal-title
+		margin-top : 0
+
+.arrow-link 
+	font-size   : 14px
+	font-weight : 800
+	color       : $_COLOR_BTN_LNK
+
+
+.arrow-link:hover 
+	text-decoration : none
+	color           : $_COLOR_BTN_LNK
+
+
+.arrow-link .arrow 
+	background-color : $_COLOR_BTN_LNK
+	width            : 18px
+	height           : 19px
+	border-radius    : 4px
+	display          : inline-block
+	position         : relative
+	top              : 5px
+	left             : 5px
+
+
+.arrow-link .arrow:before 
+	content         : ''
+	position        : absolute
+	background      : url('../assets/img/arrow-left.svg') no-repeat center center
+	background-size : contain
+	width           : 9px
+	height          : 15px
+	left            : 3px
+	top             : 2px
+
+.payment-box
+	display         : flex
+	flex-wrap       : wrap
+	align-items     : center
+	justify-content : center
+	display			: -webkit-flex
+	-webkit-align-items     : center
+	-webkit-justify-content : center
+	-webkit-flex-wrap       : wrap
+	margin          : 70px auto
+	max-width       : 795px
+	
+.payment-item
+	max-width        : 370px
+	width            : calc(100% - 30px)
+	background-color : $_COLOR_BOX_PAY_BG
+	height           : 216px
+	border-radius    : 6px
+	margin           : 12px
+	text-align       : center
+	cursor           : pointer
+	position         : relative
+	transition       : all 0.3s
+	p:nth-child(1)
+		@include font ( 'Open Sans', 19px, 600, $_COLOR_WITHE )
+		margin    : 38px auto 20px
+		max-width : 230px
+	.price
+		@include font ( 'Teko', 29px, bold, $_COLOR_WITHE )
+	&.active
+		background-color : $_COLOR_OVERWATCH_BG
+		.check
+			display : block
+	&:hover
+		background-color : $_COLOR_OVERWATCH_BG
+
+#boxTimer
+	width : 100%
+.countdown
+	display         : flex!important
+	text-align      : center
+	color           : #fff
+	width           : 74%
+	justify-content : space-between!important
+	max-width       : 390px
+	min-width       : 220px
+	padding-top     : 45px
+	margin          : auto
+	display			: -webkit-flex!important
+	-webkit-justify-content : space-between!important
+	-webkit-align-items : center!important
+	-webkit-align-content : center!important 
+	.measurements-text
+		font-family : 'Open Sans', sans-serif
+		font-size   : 20px
+		color       : rgba(255, 255, 255, 0.6)
+		font-weight : normal
+		line-height : 0
+		margin-top  : 14px
+	.measurements
+		display        : flex
+		display		   : -webkit-flex 
+		flex-direction : column
+		line-height    : 100%
+		flex : auto!important
+		-webkit-flex : auto!important
+		-webkit-flex-direction : column
+		.divider
+			display : none
+	.measurements-number
+		font-family     : 'Teko', sans-serif!important
+		font-size       : 72px
+		font-weight     : 300
+
+
+.test-timer
+	countdown
+		color           : #000
+		p
+			color           : #000
+
+.pk-widget-iframe-container
+	overflow : hidden!important
+
+.d-flex
+	display: -webkit-flex
+
+.justify-content-center
+	-webkit-justify-content: center
+
+.justify-content-between
+	-webkit-justify-content: space-between
+
+.align-items-center
+	-webkit-align-items: center
+
+.row
+	display: -webkit-flex
+	-webkit-flex-wrap: wrap
+
+.order-lg-1
+	-webkit-order: 1
+
+.order-lg-2
+	-webkit-order: 2
+
+.col-lg-5
+	-webkit-flex: 0 0 41.666666667%
+
+.col-lg-6
+	-webkit-flex: 0 0 50%
+
+.col-lg-7
+	-webkit-flex: 0 0 58.333333333%
